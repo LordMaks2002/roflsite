@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+a {
+    color: #ff8484;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: #000000;
+    background: linear-gradient(224deg, rgba(0, 0, 0, 1) 0%, rgba(77, 77, 77, 1) 39%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 5px;
+    background: #000000;
+    border-radius: 2px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    color: #000000;
+    border-bottom: 5px solid #ffffff;
+}
+
+header nav ul li.btn a {
+    background: rgb(0, 0, 0);
+    padding: 9px 18px;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li.btn a:hover {
+    display: inline-block;
+    background: #5b5b5b;
+    scale: 1.5;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 660px;
+    padding-top: 70px;
+}
+
+.hero--info h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero--info h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hero--info p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.hero--info .btn {
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.hero--info .btn:hover {
+    background: #5b5b5b;
+    scale: 1.5;
+}
+
+.hero img {
+    position: absolute;
+    top: -300px;
+    right: -250px;
+    scale: 0.4;
+}
+
+/*next sector*/
+.trending {
+    padding: 50px;
+}
+
+.trending h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.trending .see-all {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 5px;
+    padding: 12px 20px;
+    float: right;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.trending .see-all:hover {
+    background: #5b5b5b;
+    scale: 1.2;
+}
+
+.trending .world {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+}
+
+.trending .world span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .world span img {
+    position: relative;
+    top: 55px;
+    margin-right: 20px;
+}
+
+.bigtext {
+    padding: 50px 0;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    margin: 100px 0;
+    color: #000;
+}
+
+.banner {
+    background: #000000;
+    padding: 100px 0;
+}
+
+.banner h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.banner p {
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 170%;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    margin-top: 30px;
+    scale: 0.9;
+    border-radius: #ffffff;
+}
